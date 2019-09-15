@@ -1,0 +1,402 @@
+/* Reset pag */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+/* Container da pagina - Classes Auxiliares*/
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2% 2%;
+
+}
+
+.w33{
+    float: left;
+    width: 33.3%;
+}
+.clear{clear: both;}
+
+
+.w50{
+    width: 50%;
+    float: left;
+
+}
+.center{text-align: center;}
+/* Termino das classes auxiliares */
+
+
+/* Menu de Navegação */
+header{
+    padding: 8px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo{
+    float: left;
+}
+.logo h2{
+    font-weight: normal;
+    color: #8e44ad;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+nav.menu-desktop{
+    float: right;
+}
+
+nav.menu-desktop li{
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 1.2em;
+}
+nav.menu-desktop li.select{
+    font-weight: normal;
+}
+nav.menu-desktop ul{
+
+    position: relative;
+    font-weight: lighter;
+    top: 8px;
+}
+nav.menu-desktop a{
+    color: #333;
+    text-decoration: none;
+    transition: 0.2s;
+}
+nav.menu-desktop a:hover{
+    color: #9b59b6;
+}
+/* Menu Mobile */
+nav.menu-mobile{
+    display: none;
+    float: right;
+
+}
+nav.menu-mobile ul{
+    display: none;
+    width: 100%;
+    background: #9b59b6;
+    left: 0;
+    top: 50px;
+    text-align: center;
+    position: absolute;
+    z-index: 9999;
+
+}
+nav.menu-mobile li{
+
+    padding: 8px 0;
+    border: 1px solid #fff;
+}
+nav.menu-mobile a {
+    display: block;
+    color: #fff;
+    font-weight: normal;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+nav.menu-mobile h2{
+    cursor: pointer;
+}
+/* Fim Menu Mobile */
+
+
+/* Sombra da Background */
+.sombra{
+
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0;
+    background: rgba(0,0,0, 0.5);
+}
+
+section.bg-main > .container{
+
+    position: relative;
+    z-index: 2;
+}
+
+/* Inicio da seção */
+section.bg-main{
+    position: relative;
+    width: 100%;
+    padding: 245px 0;
+    background-image: url('../img/bg1.jpg');
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover !important;
+    background-attachment: fixed;
+    text-align: center;
+}
+section.bg-main{
+    font-size: 2em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    text-shadow: 1px 1px 2px #7f8c8d;
+    color: #8e44ad;
+}
+section.bg-main p{
+    font-size: 0.7em;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    text-align: left;
+    margin: 10px;
+}
+section.bg-alt{
+    padding: 30px 0;
+    text-align: center;
+}
+.line-text{
+    position: relative;
+    display: inline-block;
+}
+.line-text div{
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 37px;
+    height: 2px;
+    background-color: #9b59b6;
+}
+
+
+.line-text h2{
+    color: #9b59b6;
+    font-weight: normal;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+}
+.icones-dif{
+    margin-top: 35px;
+}
+
+.box-icon{
+    float: left;
+    width: 33.3%;
+    padding: 0 10px;
+    margin-top: 35px;
+
+}
+.box-icon h2{
+    color: #333;
+    font-size: 2em;
+}
+.box-icon p{
+    color: #646464;
+    font-size: 1 em;
+    font-weight: lighter;
+}
+
+section.dream{
+    padding: 30px 0;
+    background:#c5c8ca;
+}
+section.dream > .container{
+    display: flex;
+    flex-wrap: wrap;
+} 
+.container-dream{
+    width: 50%;
+}
+.sobre-dream{
+    width: 50%;
+}
+.sobre-dream p {
+    color: #333;
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+.picture{
+    margin-top: 13px;
+    margin-bottom: 7px;
+}
+
+.img-pic{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-size: 100% 100%;
+}
+.descricao-img{
+    width: calc(100% - 70px);
+    padding: 0 10px;
+   
+}
+.descricao-img h3{
+    color: #333;
+    font-weight: normal;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+.descricao-img p{
+    color: rgb(30,30,30);
+    font-family: 'Squada One', sans-serif;
+}
+.container-dream h2{
+    margin-top: 3px;
+    text-shadow: 1px 1px 2px #333;
+}
+.sobre-dream h2{
+    margin-top: 3px;
+    text-shadow: 1px 1px 2px #333;
+}
+
+
+.contato{
+    padding: 10px 0;
+    background: #9b59b6;
+}
+
+.form-contato input[type=text]{
+    width: calc(100% - 120px);
+    border: 1px #ccc solid;
+    background: #fff;
+    height: 40px;
+    font-size: 1em;
+    padding: 10px;
+    color: #9b59b6;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.form-contato input[type=submit]{
+    width: 120px;
+    border: none;
+    background: rgb(90, 11, 114);
+    font-weight: bold;
+    height: 42px;
+    cursor: pointer;
+    color: #fff;
+    display: inline-block;
+}
+.contato h2{
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.cards{
+    padding: 30px 0;
+
+}
+.card-single{
+    width: 33.3%;
+    float: left;
+    padding: 50px; 
+   
+}
+.card-single img{
+    width: 100%; 
+}
+
+.card-single figcaption{
+    font-weight: normal;
+    font-size: 1.5em;
+    margin-top: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+.card-single p{
+    margin: 10px 0; 
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 2px #ccc solid;   
+    padding-bottom: 20px;
+    font-size: 1em;
+}
+footer.footer1{
+    background-color: #9b59b6;
+    padding: 20px 0;
+    color: #fff;
+}
+footer.footer1 h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    margin-bottom: 7px;
+    font-size: 1.5em;
+
+}
+footer.footer1 address{
+    font-weight: lighter;
+    margin-top: 5px;
+    font-size: 1em;
+}
+.link > a{
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    text-decoration: none;
+}
+footer.footer1 a:hover{
+    color: #fff;
+}
+
+.group-icons a{
+    font-size: 1.5em;
+    display: inline-block;
+    margin: 15px 10px;
+}
+
+footer.footer2{
+    background-color: #8e44ad;
+    padding: 15px 0;
+    color: #fff;
+    text-align: center;
+}
+footer.footer2 p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 768px){
+    .card-single{width: 100%;}
+    footer.footer1{
+        text-align: center;
+    }
+    .w50, .w33{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .box-icon{
+        width: 100%;
+    }
+    .container-dream{
+        width: 100%;
+    }
+    .sobre-dream{
+        margin-top: 60px;
+        width: 100%;
+    }
+    section.bg-main p{
+        text-align: center;
+    }
+    section.bg-main{
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 500px){
+    nav.menu-mobile{
+        display: block;
+    }
+    nav.menu-desktop{
+        display: none;
+    }
+    .card-single{
+        padding: 10px;
+    }
+    section.bg-main p{
+        text-align: center;
+    }
+}
