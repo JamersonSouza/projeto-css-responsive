@@ -475,6 +475,80 @@ section.parallax h2.efeito-parallax:hover{
 
 }
 
+section.metas{
+    padding: 40px 0;
+}
+
+
+/*FlexBox para seção de Metas*/
+.metas-circle{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.metas-circle-single{
+    padding: 0 25px;
+    width: 33.3%;
+}
+.avatar-single{
+    position: relative;
+    width: 50%;
+    padding-top: 50%;
+    margin: 0 auto;
+}
+.avatar-single-container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    border: 2px #333 solid;
+    background: #ccc;
+}
+
+.metas-circle-single{
+    text-align: center;
+    padding: 0 20px; 
+}
+.metas-circle-single h3{
+    margin-top: 8px;
+    font-weight: normal;
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Finalizando pagina sobre... com um café.*/
+    section.final{
+        background-color: rgb(230,230,230);
+        border-top: 2px solid rgb(210,210,210);
+        padding: 20px 0;
+
+    }
+    section.final p{
+        margin-top: 10px;
+        font-size: 1em;
+        font-weight: lighter;
+        font-family: 'Roboto', sans-serif;
+        text-indent: 10px;
+    }
+    .card-text{
+        position: relative;
+        width: 80%;
+        margin-top: 10px;
+    }
+    .card-text img{
+       
+        max-width: 100%;
+    }
+    .card-text h3{
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        color: #fff;
+        font-size: 1.2em;
+        font-weight: normal;
+    }
 
 /*Responsividade..*/
 
@@ -515,6 +589,19 @@ section.parallax h2.efeito-parallax:hover{
 }
 
 @media screen and (max-width: 500px){
+    .section.final{
+        text-align: center;
+    }
+    .card-text h3{
+        margin: 12px;
+        font-weight: normal;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .metas-circle-single{
+        padding: 0 8px;
+        margin-bottom: 30px; 
+        width: 100%;
+    }
     nav.menu-mobile{
         display: block;
     }
