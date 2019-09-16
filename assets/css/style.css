@@ -359,6 +359,55 @@ footer.footer2 p {
     font-weight: normal;
 }
 
+
+/*Pagina About(Sobre)*/
+
+section.page1{
+    padding: 30px;
+    width: 100%;
+    min-height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/*Overlay (sombra na imagem) */
+
+.sombra-page{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background: rgba(0,0,0,0.6);
+}
+
+section.page1 > .container{
+    position: relative;
+    z-index: 101;
+}
+
+/*Fim sombra */
+
+section.page1 h2{
+color: #9b59b6;
+ font-weight: normal;
+ font-family: 'Oswald', sans-serif;
+ font-size: 3em;
+ text-shadow: 1px 1px 2px #333;
+}
+
+section.page1 p{
+    color: #fff;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    margin-top: 15px;
+}
+
+/*Responsividade..*/
+
 @media screen and (max-width: 768px){
     .card-single{width: 100%;}
     footer.footer1{

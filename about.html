@@ -28,38 +28,66 @@
                             <li><a href="#">PORTIFOLIO</a></li>
                         </ul>
                         </nav>
+                        <nav class="menu-mobile">
+                            <h2 class="fa fa-bars"></h2>
+                            <ul>
+                                <li class="select"><a href="#">HOME</a></li>
+                                <li><a href="about.html">SOBRE</a></li>
+                                <li><a href="#">PORTIFOLIO</a></li>
+                            </ul>
+                        </nav>
                         <div class="clear"></div>
             </div>
     </header>
+
+    <section style="background-image: url('assets/img/bg2.jpg')" class="page1">
+        <div class="sombra-page"></div>
+        <div class="container">
+            <h2>+Sobre mim..</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium minus nobis, quaerat consequatur
+                dignissimos, ad odit laborum vero eum consectetur ipsum at repellendus quod earum atque ea eligendi,
+                numquam molestias?</p>
+        </div>
+
+    </section>
+
     <footer class="footer1">
         <div class="container">
             <div class="w33">
                 <h2>Onde me Encontrar?</h2>
-                <p><i class="fa fa-map-pin"></i> Rua Dos Perdidos, nº 1000</p>
+                <p><i class="fa fa-map-pin"></i>  Recife - PE</p>
                 <address><i class="fa fa-phone"></i> (81) 9 8979-8488</address>
             </div>
             <div class="w33">
                 <div class="link">
-                <h2>Links úteis</h2>
-                <a href="">Origamid</a>
-                <a href="">Danki Code</a>
-                <a href="">IFPE</a>
-            </div>
+                    <h2>Links úteis</h2>
+                    <a href="">GitHub</a>
+                    <a href="">Youtube</a>
+                    <a href="">Instagram</a>
+                </div>
             </div>
             <div class="w33">
                 <h2>Conecte-se Comigo</h2>
                 <div class="group-icons">
-                <a href=""><i class="fab fa-facebook-square"></i></a>
-                <a href=""><i class="fab fa-twitter-square"></i></a>
-                <a href=""><i class="fab fa-instagram"></i></a>
-            </div>
+                    <a href=""><i class="fab fa-facebook-square"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
             <div class="clear"></div>
         </div>
     </footer>
-        <footer class="footer2">
-                <p>Desenvolvido por &copy;Jamerson Souza - Todos direitos Reservado 2019.</p>
-        </footer>
+    <footer class="footer2">
+        <p>Desenvolvido por &copy;Jamerson Souza - Todos direitos Reservado 2019.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js">
+    </script>
+    <script>
+        $('nav.menu-mobile h2').click(function () {
+            $('nav.menu-mobile ul').slideToggle();
+        })
+    </script>
 
 </body>
 
